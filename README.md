@@ -13,12 +13,12 @@
 
 
 # Change and improve from the first rice
-> Make all design shifted from rounded to sharp corners.
-> Improved and completely overhauled the visually of Waybar and wofi.
-> Added dunst - a notification daemon for Hyprland.
-> Added a general menu using wofi.
-> Fixed some OCD minor designs.
-> ~~Switch to fastfetch~~ (I haven't got the fastfetch to auto-scale the image)
+> * Make all design shifted from rounded to sharp corners.
+> * Improved and completely overhauled the visually of Waybar and wofi.
+> * Added dunst - a notification daemon for Hyprland.
+> * Added a general menu using wofi.
+> * Fixed some OCD minor designs.
+> * ~~Switch to fastfetch~~ (I haven't got the fastfetch to auto-scale the image)
 
 
 ## Dependencies
