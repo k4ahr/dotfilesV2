@@ -32,18 +32,15 @@
 | App launcher        | [wofi](https://hg.sr.ht/~scoopta/wofi)
 | Wallpaper daemon    | [swww](https://github.com/LGFae/swww)
 | Screenshot tool     | [hyprshot](https://github.com/Gustash/Hyprshot)
-| Main Font           | [Noto Sans](https://archlinux.org/packages/extra/any/noto-fonts/) & [Nerd Font](https://github.com/ryanoasis/nerd-fonts)
+| Main Font           | [Noto Sans](https://archlinux.org/packages/extra/any/noto-fonts/) & [Iosevka Nerd Font](https://github.com/ryanoasis/nerd-fonts)
 | SDDM font           | [Atkinson Hyperlegible](https://archlinux.org/packages/extra/any/ttf-atkinson-hyperlegible/)
-| SDDM font           | [Hack Nerd Fonts](https://archlinux.org/packages/extra/any/ttf-hack-nerd/)
+| Wofi and Waybar font| [IBM Plex Mono](https://fonts.google.com/specimen/IBM+Plex+Mono)
 | Audio visualizer    | [cava](https://github.com/karlstav/cava)
 | Terminal clock      | [tty-clock](https://github.com/xorg62/tty-clock)
 
 ## Installation
 
-### Using quick script
-Installation script is still WIP :(
 
-### Manually
 * Install all listed dependencies above, with also  [git](https://github.com/git/git):
 * Clone the dotfiles
 ```bash
