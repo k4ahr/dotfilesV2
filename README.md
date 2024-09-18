@@ -57,7 +57,7 @@ $ git clone https://github.com/k4ahr/dotfiles.git
 ```
 * Copy files to the corresponding folders
 ```bash
-$ cp -rf dotfiles/* ~/
+$ cp -rf dotfilesV2/* ~/
 ```
 * Copy SDDM theme for the login screen
 ```bash
