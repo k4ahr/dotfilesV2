@@ -36,7 +36,6 @@
 | Resource monitor    | [btop](https://github.com/aristocratos/btop)
 | Bar                 | [waybar](https://github.com/Alexays/Waybar)
 | Lockscreen          | [sddm](https://github.com/sddm/sddm)
-| Idle daemon         | [hypridle](https://github.com/hyprwm/hypridle)
 | App launcher        | [wofi](https://hg.sr.ht/~scoopta/wofi)
 | Wallpaper daemon    | [swww](https://github.com/LGFae/swww)
 | Screenshot tool     | [hyprshot](https://github.com/Gustash/Hyprshot)
