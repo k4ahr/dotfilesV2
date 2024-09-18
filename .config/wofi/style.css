@@ -1,0 +1,82 @@
+window {
+    margin: 0px;
+    border: 5px solid null;
+    background-color: null;
+    border-radius: 1px;
+    font-family: IBM Plex Mono;
+}
+
+#input {
+    padding: 4px;
+    margin: 4px;
+    padding-left: 20px;
+    border: none;
+    color: #FFFFFF;
+    font-weight: bold;
+    font-size: 25px;
+    background-color: #0E132F;
+    outline: none;
+    border-radius: 1px;
+    margin: 10px;
+    margin-bottom: 2px;
+}
+
+#input:focus {
+    border: 0px solid #0E132F;
+    margin-bottom: 0px;
+}
+
+#inner-box {
+    margin: 4px;
+    border: 10px solid #0E132F;
+    color: #FFFFFF;
+    font-weight: bold;
+    background-color: #0E132F;
+    border-radius: 1px;
+}
+
+#outer-box {
+    margin: 0px;
+    border: none;
+    border-radius: 1px;
+    background-color: #0E132F;
+}
+
+#scroll {
+    margin-top: 5px;
+    border: none;
+    border-radius: 1px;
+    margin-bottom: 5px;
+}
+
+#img:selected {
+    background-color: #A35398;
+    border-radius: 1px;
+}
+
+
+
+#text:selected {
+    margin-left: 20px; /* Ensure the margin is applied to selected text as well */
+    color: #FFFFFF;
+    margin: 10px 0px;
+    border: none;
+    border-radius: 1px;
+    background-color: #A35398;
+}
+
+#entry {
+    margin: 10px 0px;
+    padding-left: 20px;  /* Add padding to maintain spacing */
+    border: none;
+    border-radius: 1px;
+    background-color: transparent;
+}
+
+#entry:selected {
+    margin: 10px 0px;
+    padding-left: 20px;  /* Ensure padding is consistent for selected entry */
+    border: none;
+    border-radius: 1px;
+    background-color: #A35398;
+}

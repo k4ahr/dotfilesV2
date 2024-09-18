@@ -1,0 +1,178 @@
+
+  /* `otf-font-awesome` is required to be installed for icons */
+
+@import '/home/k4ahr/.config/waybar/colors-waybar.css';
+@import url("/home/k4ahr/.cache/wal/colors-waybar.css");
+*{
+  font-family: Material Design Icons, IBM Plex Mono, Iosevka Nerd Font;
+  font-size: 15px;
+}
+
+window#waybar {
+  background-color: @color0;
+  color: #ffffff;
+  transition-property: background-color;
+  transition-duration: 0.5s;
+}
+
+window#waybar.hidden {
+  opacity: 0.1;
+}
+
+
+
+#clock,
+#cpu,
+#memory,
+#tray,
+#mode,
+#workspaces,
+#idle_inhibitor {
+  color: @color13;
+  border-radius: 0px;
+  padding-left: 15px;
+  padding-right: 15px;
+  background-color: @color0;
+  border-radius: 0px;
+  font-size: 15px;
+
+
+}
+
+#cpu {
+	background-color: @color0;
+  color: @color13;
+}
+
+#memory {
+  background-color: @color0;
+  color: @color13;
+  padding-left: 0px;
+  padding-right: 10px;
+}
+
+
+#custom-media {
+  color: @color13;
+  padding-left: 0px;
+  padding-right: 15px;
+}
+
+
+#workspaces button {
+  background-color: @color0;
+  color: @color13;
+  box-shadow: none;
+  margin-left: 3px;
+  margin-right: 3px;
+  padding-right: 4px;
+  padding-left: 4px;
+  transition: all 0.5s cubic-bezier(0.55, -0.68, 0.48, 1.68);
+  border-radius: 0px;
+}
+
+#workspaces button.active {
+  color: @color0;
+  background-color: @color13;
+  padding-left: 5px;
+  padding-right: 5px;
+  margin-left: 5px;
+  margin-right: 5px;
+  transition: all 0.5s cubic-bezier(0.55, -0.68, 0.48, 1.68);
+}
+
+
+#pulseaudio {
+  	background-color: @color0;
+  color: @color13;
+  font-size: 15px;
+}
+
+#pulseaudio.muted {
+  color: #fb958b;
+  font-size: 15px;
+}
+
+#backlight {
+  background-color: @color0;
+color: @color13;
+font-size: 15px;
+}
+
+#network {
+  padding-left: 0.2em;
+  	background-color: @color0;
+  color: @color13;
+  padding-left: 15px;
+  padding-right: 15px;
+  font-size: 15px;
+}
+
+#network.disconnected {
+  color: #fb958b;
+}
+
+#battery {
+  	background-color: @color0;
+  color: @color13;
+  padding-left: 15px;
+  padding-right: 15px;
+  font-size: 15px;
+}
+
+#battery.critical,
+#battery.warning,
+#battery.full,
+#battery.charging,
+#battery.plugged {
+  	background-color: @color0;
+  color: @color13;
+  padding-left: 15px;
+  padding-right: 15px;
+  font-size: 15px;
+}
+
+@keyframes blink {
+  to {
+    background-color: rgba(30, 34, 42, 0.5);
+    color: #abb2bf;
+  }
+}
+
+#battery.warning {
+  color: #ecd3a0;
+}
+
+#battery.critical:not(.charging) {
+  color: #fb958b;
+}
+
+
+
+#clock {
+  	background-color: @color0;
+  color: @color13;
+  font-weight: bold;
+}
+
+
+
+tooltip {
+  font-family: Iosevka Nerd Font;
+  border-radius: 0px;
+  padding: 15px;
+  background-color: #1f232b;
+}
+
+tooltip label {
+  font-family: IBM Plex Mono;
+  padding: 5px;
+}
+
+label:focus {
+  background-color: #1f232b;
+}
+
+
+
+

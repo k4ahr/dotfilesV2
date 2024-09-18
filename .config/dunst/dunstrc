@@ -1,0 +1,49 @@
+[global]
+    # Set the idle timeout in seconds. Set to 0 for permanent notifications.
+    timeout = 10
+
+    # Window dimensions (width). Height is auto-calculated.
+    width = 300
+    padding = 10
+
+    # Adjust the corner radius for rounded corners.
+    frame_width = 0
+
+    # Font for the notifications
+    font = Monospace 10
+
+    # Transparency level (0 - fully opaque, 100 - fully transparent)
+    transparency = 0
+
+    # Specify the position for the notifications.
+    origin = top-right
+    offset = 20x20
+
+    # Enable layered notifications (new notifications appear over older ones).
+    stack_duplicates = true
+
+    # Use the default monitor for notifications.
+    monitor = 0
+
+    # Allow notification to follow the focused window
+    follow = mouse
+
+    # Configure shortcuts here or use dunstctl commands.
+    close = ctrl+shift+space
+    close_all = ctrl+shift+q
+
+[urgency_low]
+    background = "#0E132F"
+    foreground = "#c2c4cb"
+    frame_color = "#8E3E83"
+
+[urgency_normal]
+    background = "#6756D2"
+    foreground = "#c2c4cb"
+    frame_color = "#8E3E83"
+
+[urgency_critical]
+    background = "#6E55D5"
+    foreground = "#c2c4cb"
+    frame_color = "#8E3E83"
+

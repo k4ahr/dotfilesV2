@@ -1,0 +1,120 @@
+{
+    "reload_style_on_change": true,
+    "height": 10, // Waybar height (to be removed for auto height)
+    "layer": "top", // Waybar at top layer
+    "modules-left": ["hyprland/workspaces","custom/media","hyprland/window","custom/mpd"],
+    
+    "modules-right": ["network", "backlight", "battery","pulseaudio", "cpu", "memory","clock"],
+      "hyprland/workspaces": {
+        "disable-scroll": true,
+        "all-outputs": true,
+        "on-click": "activate",
+        "persistent_workspaces": {
+            "1": [],
+            "2": [],
+            "3": [],
+            "4": [],
+            "5": [],
+            "6": [],
+            "7": [],
+            "8": [],
+            "9": [],
+            "10": []
+        }
+    },
+    "hyprland/window": {
+        "format": "{}"
+    },
+    "tray": {
+        "icon-size": 25,
+        "spacing": 10
+    },
+    "clock": {
+        "format": "{:%H:%M}",
+        "format-alt": "{:%b %d %Y}",
+        "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
+    },
+    "cpu": {
+      "interval": 10,
+      "format": "󰻠 {}%",
+      "max-length": 10,
+      "on-click": "",
+    },
+    "memory": {
+        "interval": 30,
+        "format": " {}%",
+        "format-alt":" {used:0.1f}GB",
+        "max-length": 10,
+    },
+    "backlight": {
+        "device": "eDP-1",
+        "format": "{icon} {percent}%",
+        "tooltip-format": "{percent}",
+        "format-icons": ["󱩎 ", "󱩏 ", "󱩐 ", "󱩑 ", "󱩒 ", "󱩓 ", "󱩔 ", "󱩕 ", "󱩖 ", "󰛨 "],
+
+    },
+    "network": {
+        /* "format-wifi": "直", */
+        "format-wifi": "{icon} {essid}",
+        "format-ethernet": "󰛳 Online",
+        "format-disconnected": "󰅛 Offline",
+        "tooltip-format": "{essid}",
+        "on-click": "kitty -e nmtui",
+        "format-icons": ["󰤯","󰤟","󰤢","󰤥","󰤨"],
+    },
+
+    "pulseaudio": {
+        "format": "{icon} {volume}%",
+        "format-muted": "",
+        "format-icons": {
+            "default": ["󰕾"]
+        },
+        "on-click": "pavucontrol &"
+    },
+
+    "battery": {
+      "states": {
+          "warning": 30,
+          "critical": 15
+      },
+      "max-length": 20,
+      "format": "{icon} {capacity}%",
+      "format-warning": "{icon} {capacity}%",
+      "format-critical": "{icon} {capacity}%",
+      "format-charging": "<span font-family='Font Awesome 6 Free'></span> {capacity}%",
+      "format-plugged": " Plugged",
+
+      "format-alt": "{icon} {time}",
+      "format-full": "",
+      "format-icons": ["󱊡", "󱊢", "󱊣"]
+    },
+    "custom/weather": {
+      "exec": "python3 ~/.config/waybar/scripts/weather.py",
+      "restart-interval": 300,
+      "return-type": "json",
+    },   
+   "custom/spotify": {
+        "exec": "python3 ~/.config/waybar/scripts/mediaplayer.py --player spotify",
+	    "max-length" : 30,
+        "format": " {}",
+        "return-type": "json",
+        "on-click": "playerctl play-pause",
+        "on-double-click-right": "playerctl next",
+        "on-scroll-down": "playerctl previous"
+    },
+    "custom/media": {
+        "format": " {}",
+        "escape": true,
+        "return-type": "json",
+        "max-length": 40,
+        "on-click": "playerctl play-pause",
+        "on-click-right": "playerctl stop",
+        "smooth-scrolling-threshold": 10, // This value was tested using a trackpad, it should be lowered if using a mouse.
+        "on-scroll-up": "playerctl next",
+        "on-scroll-down": "playerctl previous",
+        "exec": "$HOME/.config/waybar/mediaplayer.py 2> /dev/null", // Script in resources/custom_modules folder
+    }
+
+
+}
+
