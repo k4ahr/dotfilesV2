@@ -1,7 +1,7 @@
 
-# DaoVuong's rice
+# HwngDaoVuong's rice
 
-> 🗃️ K4ahr's Hyprland dotfiles. 
+> 🗃️ K4ahr's second Hyprland dotfiles, with major changed and improved from the first [dotfiles](https://github.com/k4ahr/dotfiles). I guess I was really that bored...
 
 <img src="screenshots/1.png"></img>
 ## Screenshots
@@ -11,6 +11,14 @@
 <img src="screenshots/4.png" width="45%"></img>
 <img src="screenshots/5.png" width="45%"></img>
 
+
+# Change and improve from the first rice
+> Make all design shifted from rounded to sharp corners.
+> Improved and completely overhauled the visually of Waybar and wofi.
+> Added dunst - a notification daemon for Hyprland.
+> Added a general menu using wofi.
+> Fixed some OCD minor designs.
+> ~~Switch to fastfetch~~ (I haven't got the fastfetch to auto-scale the image)
 
 
 ## Dependencies
@@ -37,6 +45,7 @@
 | Wofi and Waybar font| [IBM Plex Mono](https://fonts.google.com/specimen/IBM+Plex+Mono)
 | Audio visualizer    | [cava](https://github.com/karlstav/cava)
 | Terminal clock      | [tty-clock](https://github.com/xorg62/tty-clock)
+| Music player      | [cmus](https://cmus.github.io/)
 
 ## Installation
 
