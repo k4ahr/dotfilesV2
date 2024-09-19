@@ -17,7 +17,7 @@ fi
 PROMPT="$GREETING, it's $CURRENT_TIME"
 
 # Create the Wofi menu options
-options="File Manager\nWiFi Settings\nPower Options\nChange Wallpaper\nTerminal\nApp Search\nBluetooth Setting"
+options="File Manager\nPower Options\nChange Wallpaper\nTerminal\nApp Search\nWireless Settings"
 
 # Display the Wofi menu with the dynamic greeting and time
 selection=$(echo -e "$options" | wofi --prompt "$PROMPT" --dmenu)
@@ -30,18 +30,14 @@ case "$selection" in
     "File Manager")
         kitty ranger
         ;;
-    "WiFi Settings")
-        # Open WiFi Settings in a floating terminal
-        kitty --class "floating-nmtui" nmtui
+    "Wireless Settings")
+        sh ~/.script/wireless_menu.sh
         ;;
     "Power Options")
         ~/.script/power-menu.sh
         ;;
     "Change Wallpaper")
         ~/.script/wallpaper_switcher.sh
-        ;;
-    "Bluetooth Setting")
-        kitty bluetui
         ;;
     "Terminal")
         kitty
