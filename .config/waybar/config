@@ -60,7 +60,7 @@
         "format-disconnected": "󰅛 Offline",
         "tooltip-format": "{essid}",
         "on-click": "kitty -e nmtui",
-        "format-icons": ["󰤯","󰤟","󰤢","󰤥","󰤨"],
+	"format-icons": ["󰢿","󰢼","󰢽","󰢾"],
     },
 
     "pulseaudio": {
